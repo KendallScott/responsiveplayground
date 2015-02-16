@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development and Design</title>
+    <link rel="stylesheet" href=" http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="http://kindledsparks.com/style.css">
+    <link rel="stylesheet" type="text/css" href="http://kindledsparks.com/svgstyle1.css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body role="document">
+    <div class="container" id="main">
+        <div class="navbar navbar-fixed-top navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle btn btn-primary" data-toggle="collapse" data-target="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> 
+                    <bold><a href="home"class="navbar-brand">Kindled<span class="glyphicon glyphicon-fire"></span> Sparks</a></bold>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="work.php">Work</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <a href="#">
+        <object id="svg" data="data:image/svg+xml,
+        <svg  
+        preserveAspectRatio='xMidYMid meet' 
+        xmlns='http://www.w3.org/2000/svg'>
+        <title>Clown Car Technique</title>
+        <style>
+            svg{ background-repeat:no-repeat;}
+            @media all and (max-width: 400px){
+            svg{ background-image:url(http://www.kindledsparks.com/image/lightblue-extrasmall.png); background-size: 50%;}
+        }
+
+        @media all and (min-width: 401px) and (max-width:700px){svg{ background-image:url(http://www.kindledsparks.com/image/sienna-small.png);}
+    }
+    @media all  and (min-width: 701px) and (max-width:900px){
+    svg{ background-image:url(http://www.kindledsparks.com/image/teal-medium.png);}
+    svg:hover{ background-image:url(http://i.imgur.com/UaHFEuH.jpg);}
+}
+@media all  and (min-width:901px)and (max-width:1100px){
+svg{ background-image:url(http://www.kindledsparks.com/image/primary-large.png);}
+}
+@media all and (min-width:1101px){
+svg{background-image:url(http://www.kindledsparks.com/image/salmon-extralarge.png);}
+}
+</style>
+</svg>" type="image/svg+xml">
+  <!--[if lte IE 8]>
+      <img src="http://www.kindledsparks.com/image/teal-medium.png" alt="Fallback for IE">
+      <![endif]-->
+  </object>
+</a>
+<div class="row">    
+    <div class="col-xs-10 col-md-10">
+    </br>
+    <div class="well">
+        <p id="height">The</p>
+        <p id="width"></p>
+        <h2>Responsive Images</h2>
+        <p>
+            <h2>The problem:</h2></br>
+            <ul>
+                <li>
+                    Browsers prefetch all images on load, even desktop images when browsing on a mobile device </li>
+                    <li><a href="http://httparchive.org/interesting.php"> Images are heavy</a></br></li>
+                </ul>
+                As of August 2014, they take up 63% of a websites weight. </br></br>
+                &lsquo;Mo pixels &lsquo;Mo problems by David Rupert </br>
+                <p> He talks about responsive image solutions. </br>
+                    <a href="http://alistapart.com/article/mo-pixels-mo-problems">&lsquo;Mo pixels &lsquo;Mo problems</a></br></br>
+
+                    <a href="http://www.smashingmagazine.com/2013/06/02/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">The Clown Car Technique</a>
+                    <a href="http://estelle.github.io/clowncar/local.svg">test</a>
+                    <p> Estelle Wey&lsquo;s solution, object tags that have svg data, the svg utilizes media queries and either a PNG or JPEG. Why this technique? 
+                        <ul>
+                            <li>It doesn&lsquo;t rely on any other tools</li>
+                            <li>It doesn&lsquo;st require the inclusion of a library</li>
+                            <li>It doesn&lsquo;t rely on cookies</li>
+                            <li>It doesn&lsquo;t send any unncessary requests</li>
+                            <li>It accounts for all browsers and has a fallback for IE 8</li>
+                        </ul>
+                        The drawbacks:
+                        <ul>
+                            <li>viewBox is annoying and can&lsquo;t be easily manipulated</li>
+                            <li>IE makes things more complicated</li>
+                            <li>The code is kinda ugly</li>
+                            <li>Doesn&lsquo;t easily work with percentage widths </li>
+                        </ul>
+                        More info:</p>
+                        <a href="http://timkadlec.com/2013/04/media-queries-within-svg/">Media querie support in svgs </a></br>
+                        <a href="http://jeremie.patonnier.net/experiences/svg/media-queries/test.html"> Tool for testing support in svgs </a></br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+    </div>
+    <div class="footer">
+      <div class="container">
+      </div>
+  </div>
+  <script>
+  $(document).ready(function(){
+    var width="Width of object: " + $("#svg").width() + "</br>";
+    var height="Height of object: " + $("#svg").height();
+    $('#width').html(width);
+    $('#height').html(height);
+    $( window ).resize(function() {
+        var width="Width of object: " + $("#svg").width() + "</br>";
+        var height="Height of object: " + $("#svg").height();
+        $('#width').html(width);
+        $('#height').html(height);
+    });
+});
+  </script>
+</body>
+</html>
